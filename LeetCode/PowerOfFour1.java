@@ -7,4 +7,9 @@ class PowerOfFour1 {
             return false;
         return(Math.floor(logn(num,4)))==Math.ceil(logn(num,4));
     }
+    public static void main(String args[]){
+	PowerOfFour1 p = new PowerOfFour1();
+	System.out.println("16 is "+p.isPowerOfFour(16));
+	System.out.println("8 is "+p.isPowerOfFour(8));
+}
 }
