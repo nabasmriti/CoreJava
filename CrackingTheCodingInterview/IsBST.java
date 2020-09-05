@@ -22,7 +22,7 @@ public class IsBST {
 		
 		if(root == null)
 			return true;
-		else if(   root.data<min ||  root.data>max)
+		else if(root.data<min ||  root.data>max)
 			return false;
 		else if(!isBST(root.left,min, root.data-1) || !isBST(root.right,root.data+1,max))
 			return false;
